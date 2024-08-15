@@ -1,5 +1,17 @@
+# brute force approach
+
+class Solution:
+    def searchInsertBruteForce(self, nums, target):
+        for i in range(len(nums)):
+            if nums[i] >= target:
+                return i
+        return len(nums)
+
+
+
+# binary search approach
 class Solution(object):
-    def searchInsert(self, nums, target):
+    def searchInsertBinarySearch(self, nums, target):
         l = 0
         r = len(nums) - 1
         n = 0
